@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="D:\Assignment.css">
+  <style>
+    .alert {
+      margin-top: 10px;
+      font-weight: bold;
+      color: green;
+    }
+  </style>
+
+</head>
+<body>
+  <nav>
+    <ul id="navigation">
+      <li><a href="#"><span class="back-symbol">&#x2190;</span> Back</a></li>
+      <li><a href="#">B2C</a></li>
+      <li><a href="#">B2B TAX</a></li>
+      <li><a href="#">B2B SUPPLY</a></li>
+      <li><a href="#">MANUAL</a></li>
+      <li><a href="#"><span class="back-symbol">&#8853;</span> </a></li>
+    </ul>
+  </nav>
+  <div class="container">
+    <div class="left-box">
+  <a href="#" class="box">
+    <h3>Unit Mapped 2/725</h3>
+  </a>
+
+  <a href="#" class="box">
+    <h3>Active Charges 7/7</h3>
+  </a>
+
+  <a href="#" class="box">
+    <h3>Reading -/2</h3>
+  </a>
+   </div>
+</div>
+
+  <div class="main-content">
+    <div class="heading-select-box">
+    <h3>Billing Cycle <span class="Symbol">*</span> <a href="your_link_here"><span class="symbol">&#8853;</span></a><a href="your_link_here"> <span class="ymbol">&#x270E;</span></a></h3>
+    <select id="billing-cycle-select" required>
+      <option selected disabled>Choose...</option>
+      <option>NOV-21-B2C</option>
+    </select>
+    <div id="billing-cycle-alert" class="alert"></div>
+</div>
+
+    <script>
+      const billingCycleSelect = document.getElementById('billing-cycle-select');
+      const billingCycleAlert = document.getElementById('billing-cycle-alert');
+
+      billingCycleSelect.addEventListener('change', function() {
+        billingCycleAlert.textContent = 'Billing Cycle is active. ✓';
+      });
+    </script>
+
+    <h3>Cluster</h3>
+    <div class="select-box">
+      <select>
+        <option selected disabled>AMN   </option>
+      </select>
+      <button class="remove-button">x</button>
+    </div>
+
+    <h3>Tower</h3>
+    <div class="select-box">
+      <select>
+        <option selected disabled>Select Tower </option>
+      </select>
+      <button class="remove-button">x</button>
+    </div>
+
+    <h3>Unit</h3>
+    <div class="select-box">
+      <select>
+        <option selected disabled>AMN0020905 - Lokendra Kumar Sharma </option>
+      </select>
+      <button class="remove-button">x</button>
+    </div>
+    <h3></h3>
+    <div class="remarks-box">
+        <textarea rows="1" cols="20" placeholder="Remarks"></textarea>
+      </div>
+      
+      
+      
+
+
+      <div class="provisional-bill">
+        <label>
+          <input type="checkbox">
+          Provisional Bill
+          <span class="in-circle">
+            <span class="question-mark">&#x25D4;</span>
+          </span>
+        </label>
+      </div>
+
+      <div class="actions">
+        <button class="generate-button"><span class="generate-symbol">&#8752;</span> Generate</button>
+        <button class="preview-button"><span class="preview-symbol">&#x1f441;</span> Preview</button>
+        <button class="print-button"><span class="print-symbol">&#128424;</span> Print</button>
+      </div>
+  </div>
+  <div class="right-box">
+    <h2 class="big-box-heading">Billing Cycle</h2>
+    <p><strong>Billing Period</strong> From | To &nbsp;&nbsp;01 Nov 2021 | 30 Nov 2021</p>
+    <p><strong>Bill Due Date</strong> &nbsp;&nbsp;01 Jan 2022 | 01 Jan 2022</p>
+    <p><strong>Consider payment To</strong> &nbsp;&nbsp;01 Jan 2022 | 01 Jan 2022</p>
+    <p><strong>Consider meter reading FROM | TO</strong> &nbsp;&nbsp;01 Jan 2022 | 01 Jan 2022</p>
+
+
+
+    <div class="Actions">
+        <button class="Message-button"><span class="generate-symbol">&#9993;</span> </button>
+        <button class="eye-button"><span class="preview-symbol">&#128065;</span></button>
+        <button class="printer-button"><span class="generate-symbol">&#128424;</span> </button>
+        <button class="SMS-button"><span class="print-symbol">&#128241;</span> SMS</button>
+        <button class="eye-button"><span class="preview-symbol">&#128065;</span></button>
+  </div>
+  <div class="bill-documentation">Bill Documentation</div>
+
+  <script src="script.js"></script>
+</body>
+</html>

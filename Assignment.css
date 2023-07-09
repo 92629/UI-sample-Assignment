@@ -1,0 +1,240 @@
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1, h2, h3 {
+    margin: 0;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  #navigation {
+    list-style-type: none;
+    padding: 20px 0;
+    margin: 0;
+    border-top: 1px solid #1e90ff; 
+    border-bottom: 1px solid #000000; 
+  }
+  
+  #navigation li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  #navigation a {
+    text-decoration: none;
+    color: #000000;
+    padding: 5px 10px;
+  }
+  
+  #navigation a:hover {
+    background-color: #1e90ff;
+    color: #ffffff;
+  }
+  
+  .back-symbol {
+    margin-right: 5px;
+  }
+  
+  /* Boxes */
+  
+  .container {
+    margin-top: 20px;
+}
+
+.left-box {
+    display: flex;
+    gap: 20px;
+    justify-content: flex-start; 
+    margin-left: 30px; 
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 100px;
+    background-color: #f2f2f2;
+    border: 1px solid #ccc;
+    text-decoration: none;
+}
+
+.box h3 {
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+    color: #333;
+    color: #1e90ff; 
+    text-decoration: underline; 
+}
+
+.main-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    position:relative;
+  }
+  
+  h3 {
+    grid-column: span 2;
+  }
+  .Symbol{
+    color:red
+  }
+  .symbol{
+    color:blue;
+    margin-left: 130px;
+  }
+  .ymbol{
+    color:#1e90ff
+  }
+  
+  .select-box {
+    grid-column: span 1;
+    display: flex;
+    align-items: center;
+  }
+  #billing-cycle-select {
+    width: 300px; 
+  }
+  
+  .select-box h3 {
+    margin-right: 10px;
+  }
+  
+  .select-box select {
+    width: 40%; 
+  }
+  
+  .remarks-box,
+  .actions {
+    grid-column: span 2;
+    margin-top: 10px;
+  }
+  .provisional-bill {
+    color: #000000
+    
+  }
+  
+  .remarks-box textarea {
+    width: 200px;
+    height: 20px;
+  }
+  
+  .right-box {
+    position: absolute;
+    top: 50px; 
+    right: 50PX;
+    margin: 30px;
+    background-color: #f1f1f1;
+    padding: 100px;
+  }
+  
+  .big-box-heading {
+    text-align: center;
+    border-top: 1px solid #1e90ff; 
+    border-bottom: 1px solid #1e90ff; 
+    top:0;
+    padding: 10px;
+
+  }
+  
+  
+  .bill-documentation {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  .Actions {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    border: 2px solid #1e90ff;
+  }
+  
+  .Actions button {
+    padding: 10px 20px;
+    border: 2px solid #1e90ff;
+    cursor: pointer;
+  }
+  .Message-button {
+    background-color: #1e90ff;
+    color: white;
+   
+    
+
+  }
+  .eye-button{
+    color:#1e90ff
+  }
+  .printer-button{
+    color:#1e90ff
+  }
+  .SMS-button{
+    background-color: #1e90ff;
+    color: white;
+
+  }
+  
+  .Actions button:hover {
+    background-color: #45a049;
+  }
+  
+  .actions button {
+    margin-right: 10px;
+  }
+  
+  .generate-button {
+    background-color: red;
+    color: white;
+    width:200px;
+    height: 30px;
+    
+  }
+  
+  .preview-button {
+    background-color: #1e90ff;
+    color: white;
+    width:100px;
+    height: 30px;
+  }
+  
+  .print-button {
+    background-color: #1e90ff;
+    color: white;
+    width:100px;
+    height: 30px;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+
+
+
+
+
